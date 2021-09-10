@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+@mixin flexPattern($display, $justifyContent, $flexWrap, $alignItems, $flexDirection) {
+  display: $display;
+  justify-content: $justifyContent;
+  flex-wrap: $flexWrap;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}
+
+@mixin backgroundImgPattern() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin fontPattern($fontWeight, $fontSize, $lineHeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin beforElement() {
+  position: absolute;
+  background: $primaryColor;
+  content: "";
+}

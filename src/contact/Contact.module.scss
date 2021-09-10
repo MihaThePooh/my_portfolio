@@ -1,0 +1,30 @@
+@import "./../common/style/sass/mixins.scss";
+
+.contact {
+    @include flexPattern(flex, "", "", center, column);
+    h2 {
+        margin-top: 6%;
+    }
+    .form {
+        @include flexPattern(flex, "", "", "", column);
+        margin-bottom: 35px;
+        input {
+            min-width: 250px;
+            height: 30px;
+            padding: 3px;
+            margin: 10px;
+        }
+        button {
+            border: none;
+            outline: none;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            width: 260px;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+

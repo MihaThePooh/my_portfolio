@@ -1,0 +1,32 @@
+@import "./../../common/style/sass/variables.scss";
+@import "./../../common/style/sass/mixins.scss";
+
+.skill {
+    width: 220px;
+    background-color: $primaryColor;
+    @include flexPattern(flex, "", "", center, column);
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 20px 18px 12px #1c1e21, -2px 8px 10px #262a2e;
+    .icon {
+        @include backgroundImgPattern();
+        height: 100px;
+        width: 100px;
+        margin-top: 35px;
+    }
+    h3 {
+        @include fontPattern(500, 24px, 32px);
+        margin-bottom: 0;
+        text-align: center;
+    }
+    p, h3 {
+        color: $textColor;
+        padding: 0 15px 0 18px;
+    }
+}
+
+
+
+
+
+

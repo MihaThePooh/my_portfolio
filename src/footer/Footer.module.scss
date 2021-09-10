@@ -1,0 +1,13 @@
+@import "./../common/style/sass/variables.scss";
+@import "./../common/style/sass/mixins.scss";
+
+.footer {
+    min-height: 90px;
+    @include flexPattern(flex, center, "", center, column);
+    .footerSocial {
+        margin: 25px;
+    }
+    span {
+        margin-bottom: 10px;
+    }
+}

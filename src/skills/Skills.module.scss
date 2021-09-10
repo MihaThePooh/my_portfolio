@@ -1,0 +1,10 @@
+@import "./../common/style/sass/mixins.scss";
+
+.skills {
+    @include flexPattern(flex, space-evenly, wrap, center, column);
+    padding: 10px;
+    .skillsItems {
+        @include flexPattern(flex, space-evenly, wrap, flex-start, row);
+    }
+}
+

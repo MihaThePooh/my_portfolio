@@ -1,0 +1,28 @@
+@import "./../common/style/sass/variables.scss";
+
+.hireMe {
+    /*background-color: #b94e82;*/
+    h2 {
+        margin: 6% 0 0 0;
+        text-align: center;
+        padding-top: 15px;
+    }
+    div {
+        height: 45px;
+        width: 180px;
+        background-color: $primaryColor;
+        margin: 20px auto;
+        text-align: center;
+        line-height: 282%;
+        color: $textColor;
+    }
+    a {
+
+    }
+}
+
+
+
+
+
+
