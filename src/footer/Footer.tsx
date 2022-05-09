@@ -1,18 +1,21 @@
 import React from 'react';
 import s from './Footer.module.scss';
+import vkLogo from '../assets/img/vk_logo.png'
+import telegramLogo from '../assets/img/telegram_logo.png'
+import Fade from 'react-reveal/Fade';
 
 function Footer() {
     return (
-        <div className={s.footer}>
-            Michael Perov
-            <div className={s.footerSocial}>
-                <a href="#">vk</a>
-                <a href="#">linkedIn</a>
-                <a href="#">telegram</a>
-                <a href="#">inst</a>
+        <Fade>
+            <div className={s.footer}>
+                <h2>Contacts</h2>
+                <div className={s.footerSocial}>
+                    <a href="https://vk.com/michael_perov"><img src={vkLogo}/></a>
+                    <a href="https://t.me/SPB_Mihail_Perov"><img src={telegramLogo}/></a>
+                </div>
+                <span>2022 &#xa9; Все права защищены</span>
             </div>
-            <span>2021 &#xa9; Все права защищены</span>
-        </div>
+        </Fade>
     );
 }
 

@@ -8,42 +8,43 @@ import reactImg from "./../assets/img/react.png";
 import reduxImg from "./../assets/img/redux.png";
 import tddImg from "./../assets/img/tdd.png";
 import {v1} from "uuid";
+import Fade from 'react-reveal/Fade';
 
 const skillsArray = [
     {
         key: v1(),
         title: "HTML + CSS",
-        style: { backgroundImage: `url(${htmlCssImg})` },
+        style: {backgroundImage: `url(${htmlCssImg})`},
         description: "Short description"
     },
     {
         key: v1(),
         title: "JavaScript",
-        style: { backgroundImage: `url(${jsImg})` },
+        style: {backgroundImage: `url(${jsImg})`},
         description: "Short description"
     },
     {
         key: v1(),
         title: "TypeScript",
-        style: { backgroundImage: `url(${tsImg})` },
+        style: {backgroundImage: `url(${tsImg})`},
         description: "Short description"
     },
     {
         key: v1(),
         title: "React",
-        style: { backgroundImage: `url(${reactImg})` },
+        style: {backgroundImage: `url(${reactImg})`},
         description: "Short description"
     },
     {
         key: v1(),
         title: "Redux",
-        style: { backgroundImage: `url(${reduxImg})` },
+        style: {backgroundImage: `url(${reduxImg})`},
         description: "Short description"
     },
     {
         key: v1(),
         title: "Test Driven Development",
-        style: { backgroundImage: `url(${tddImg})` },
+        style: {backgroundImage: `url(${tddImg})`},
         description: "Short description"
     }
 ];
@@ -55,10 +56,12 @@ function Skills() {
     );
 
     return (
-        <div className={s.skills}>
-            <h2>My skills</h2>
-            <div className={s.skillsItems}>{skillsForRender}</div>
-        </div>
+        <Fade bottom>
+            <div className={s.skills} id={"skills"}>
+                <h2>My skills</h2>
+                <div className={s.skillsItems}>{skillsForRender}</div>
+            </div>
+        </Fade>
     );
 }
 

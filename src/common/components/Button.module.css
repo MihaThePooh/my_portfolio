@@ -1,0 +1,13 @@
+@import "../style/sass/variables.scss";
+@import "../style/sass/mixins.scss";
+
+.btn {
+    border: none;
+    @include flexPattern(row, center, center, nowrap);
+    @include fontPattern();
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    max-width: 100px;
+    width: 100%;
+}

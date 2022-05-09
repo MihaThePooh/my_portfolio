@@ -15,8 +15,8 @@ function App() {
         <Welcome/>
         <Skills/>
         <Works/>
-        <HireMe/>
-        <Contact/>
+        {/*<HireMe/>*/}
+        {/*<Contact/>*/}
         <Footer/>
     </div>
   );

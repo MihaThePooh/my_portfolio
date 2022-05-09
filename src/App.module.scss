@@ -5,6 +5,8 @@
     flex-direction: column;
     margin: 0 auto;
     background-color: $bgColor;
+    background-size: 7px 7px;
+    background-image: repeating-linear-gradient(45deg, #28383c 0, #28383c 0.7000000000000001px, #212428 0, #212428 50%);
     color: $textColor;
 }
 
@@ -16,6 +18,7 @@ a {
 
 h1, h2 {
     margin: 0;
+    margin-top: 45px;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.3;

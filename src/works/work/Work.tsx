@@ -5,6 +5,8 @@ type WorkPropsType = {
     title: string
     description: string
     style: { backgroundImage: string }
+    demo: string
+    sourceCode: string
 }
 
 function Work(props: WorkPropsType) {
@@ -15,9 +17,13 @@ function Work(props: WorkPropsType) {
                 <a className={s.workPreviewButton} href="#">Look</a>
             </div>
             <h3>{props.title}</h3>
-            <p className={s.description}>{props.description}</p>
+            <p className={s.description}>{props.description}<br/>
+                <a href={props.demo}>DEMO</a>
+                <a href={props.sourceCode}>SOURCE CODE</a>
+            </p>
+
         </div>
-    );
+);
 }
 
 export default Work;

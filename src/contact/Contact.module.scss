@@ -1,6 +1,7 @@
 @import "./../common/style/sass/mixins.scss";
 
 .contact {
+    height: 71vh;
     @include flexPattern(flex, "", "", center, column);
     h2 {
         margin-top: 6%;
@@ -10,18 +11,40 @@
         margin-bottom: 35px;
         input {
             min-width: 250px;
-            height: 30px;
-            padding: 3px;
+            height: 40px;
+            padding: 3px 3px 3px 12px;
             margin: 10px;
+            background-color: $primaryColor;
+            color: $textColor;
+            border: 0;
+            &:hover {
+                background-color: #40585e;
+            }
+        }
+        textarea {
+            resize: none;
+            overflow-y: hidden;
+            height: 150px;
+            background-color: #28383c;
+            color: #fff;
+            border: 0;
+            width: 261px;
+            margin: 10px;
+            padding: 14px 3px 3px 12px;
         }
         button {
             border: none;
             outline: none;
-            height: 40px;
+            height: 46px;
             margin-top: 10px;
             margin-bottom: 15px;
-            width: 260px;
+            width: 276px;
             margin-left: 10px;
+            background-color: $primaryColor;
+            color: $textColor;
+            &:hover {
+                background-color: #40585e;
+            }
         }
     }
 }
