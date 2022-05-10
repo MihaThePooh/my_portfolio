@@ -14,45 +14,39 @@ const skillsArray = [
     {
         key: v1(),
         title: "HTML + CSS",
-        style: {backgroundImage: `url(${htmlCssImg})`},
-        description: "Short description"
+        style: {backgroundImage: `url(${htmlCssImg})`}
     },
     {
         key: v1(),
         title: "JavaScript",
-        style: {backgroundImage: `url(${jsImg})`},
-        description: "Short description"
+        style: {backgroundImage: `url(${jsImg})`}
     },
     {
         key: v1(),
         title: "TypeScript",
-        style: {backgroundImage: `url(${tsImg})`},
-        description: "Short description"
+        style: {backgroundImage: `url(${tsImg})`}
     },
     {
         key: v1(),
         title: "React",
-        style: {backgroundImage: `url(${reactImg})`},
-        description: "Short description"
+        style: {backgroundImage: `url(${reactImg})`}
     },
     {
         key: v1(),
         title: "Redux",
-        style: {backgroundImage: `url(${reduxImg})`},
-        description: "Short description"
+        style: {backgroundImage: `url(${reduxImg})`}
     },
     {
         key: v1(),
         title: "Test Driven Development",
-        style: {backgroundImage: `url(${tddImg})`},
-        description: "Short description"
+        style: {backgroundImage: `url(${tddImg})`}
     }
 ];
 
 function Skills() {
 
     const skillsForRender = skillsArray.map(
-        (sk) => <Skill key={sk.key} style={sk.style} title={sk.title} description={sk.description}/>
+        (sk) => <Skill key={sk.key} style={sk.style} title={sk.title}/>
     );
 
     return (

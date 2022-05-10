@@ -7,6 +7,7 @@
     text-align: left;
     margin: 10px;
     width: 300px;
+    height: 368px;
     border-radius: 0 0 10px 10px;
     box-shadow: 20px 18px 12px #1c1e21;
     .workPreview {
@@ -14,14 +15,10 @@
         width: 100%;
         @include backgroundImgPattern();
         position: relative;
-        /*& указывает на родителя .workPreview*/
-        &::before {
-            @include beforElement();
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0.5;
+        opacity: 0.7;
+        transition: opacity 300ms;
+        &:hover {
+            opacity: 1;
         }
         .workPreviewButton {
             position: relative;
@@ -34,29 +31,6 @@
             &:hover {
                 transform: scale(2.15);
                 opacity: 0;
-                //transform or animation
-                //animation-name: pulsing;
-                //animation-duration: 1000ms;
-                //animation-iteration-count: 1;
-                //animation-timing-function: ease-in-out;
-                //@keyframes pulsing {
-                //    0% {
-                //        padding: 10px 20px;
-                //        left: 0;
-                //        top: 0;
-                //        height: 25px;
-                //        width: 100px;
-                //        opacity: 0.8;
-                //    }
-                //    100% {
-                //        padding: 30px 44px;
-                //        left: -24px;
-                //        top: -20px;
-                //        height: 30px;
-                //        width: 100px;
-                //        opacity: 0;
-                //    }
-                //}
             }
         }
         a {
@@ -75,8 +49,15 @@
     .description, h3 {
         color: $textColor;
         padding: 0 15px 0 18px;
+    }
+    .workButtons {
+        width: 100%;
+        height: 38px;
+        @include flexPattern(flex, space-evenly, "", "", row);
         a {
-            //margin: 10px;
+            display: inline-block;
+            padding: 8px;
+            border-bottom: 1px solid grey;
         }
     }
 }
