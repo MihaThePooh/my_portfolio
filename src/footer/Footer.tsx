@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 function Footer() {
     return (
         <Fade>
-            <div className={s.footer}>
+            <div className={s.footer} id={"contact"}>
                 <h2>Contacts</h2>
                 <div className={s.footerSocial}>
                     <a href="https://vk.com/michael_perov"><img src={vkLogo}/></a>

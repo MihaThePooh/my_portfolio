@@ -10,8 +10,7 @@ function Contact() {
                 <form className={s.form}>
                     <input type="text" placeholder="name"/>
                     <input type="text" placeholder="email"/>
-                    {/*<textarea placeholder="message" wrap={"on"}/>*/}
-                    <textarea placeholder="message"></textarea>
+                    <textarea placeholder="message"/>
                     <button type="submit">Send</button>
                 </form>
             </div>
